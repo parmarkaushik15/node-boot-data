@@ -1,0 +1,10 @@
+import { ModelCtor } from '../model/model/model';
+import { ScopeOptions, ScopeOptionsGetters, ScopesOptions } from './scope-options';
+export declare function resolveScopes(models: ModelCtor[]): void;
+export declare const resolveScope: (scopeName: string, model: ModelCtor, options: ScopesOptions) => void;
+export declare const addScopeOptionsGetter: (target: any, options: ScopeOptionsGetters) => void;
+export declare const getScopeOptionsGetters: (target: any) => ScopeOptionsGetters;
+export declare const setScopeOptionsGetters: (target: any, options: ScopeOptionsGetters) => void;
+export declare const resolvesDeprecatedScopes: (model: ModelCtor) => void;
+export declare function addScopeOptions<TCreationAttributes extends {}, TModelAttributes extends {}>(target: any, options: ScopeOptions<TCreationAttributes, TModelAttributes>): void;
+export declare function getScopeOptions<TCreationAttributes extends {}, TModelAttributes extends {}>(target: any): ScopeOptions<TCreationAttributes, TModelAttributes> | undefined;

@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "rootDir": "./",
+    "baseUrl": "./",
+    "emitDecoratorMetadata": true,
+    "declaration": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "noUnusedLocals": true,
+    "removeComments": true,
+    "strict": true,
+    "types": [
+      "node"
+    ],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "sourceMap": true,
+    "target": "es6",
+  },
+  "exclude": [
+    "node_modules",
+    "./node_modules/*",
+    "./test/**/*",
+    "./**/*.spec.ts"
+  ]
+}

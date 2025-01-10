@@ -1,0 +1,10 @@
+import 'reflect-metadata';
+import { HookMeta } from './hook-meta';
+import { HookOptions } from './hook-options';
+import { SequelizeHooks } from 'sequelize/types/hooks';
+import { ModelCtor } from '../../model/model/model';
+export declare function installHooks(models: ModelCtor[]): void;
+export declare function implementHookDecorator(hookType: keyof SequelizeHooks, args: any[]): Function | void;
+export declare function addHook(target: any, hookType: keyof SequelizeHooks, methodName: string, options?: HookOptions): void;
+export declare function getHooks(target: any): HookMeta[] | undefined;
+export declare function setHooks(target: any, hooks: HookMeta[]): void;
